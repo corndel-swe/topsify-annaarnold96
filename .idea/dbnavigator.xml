@@ -26,6 +26,7 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
       <object connection-id="22bf2473-84fc-4389-a359-6ea5e98603bb" object-ref="schemas/main/tables/albums" />
+      <object connection-id="22bf2473-84fc-4389-a359-6ea5e98603bb" object-ref="schemas/main/tables/features" />
       <object connection-id="22bf2473-84fc-4389-a359-6ea5e98603bb" object-ref="schemas/main/tables/tracks" />
     </open-files>
   </component>
@@ -35,6 +36,7 @@
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="22bf2473-84fc-4389-a359-6ea5e98603bb" dataset="main.albums" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="22bf2473-84fc-4389-a359-6ea5e98603bb" dataset="main.tracks" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="22bf2473-84fc-4389-a359-6ea5e98603bb" dataset="main.features" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
