@@ -36,12 +36,13 @@ public class Main {
 
         //System.out.println(stringList);
 
-        ObjectMapper mapper = new ObjectMapper();
-        System.out.println("hi");
-        var help =
-        User userList = mapper.readValue(lines, User.class);
+//        ObjectMapper mapper = new ObjectMapper();
+//        System.out.println("hi");
+//        var help = mapper.readTree(lines);
+//        System.out.println(help);
+//        User userList = mapper.readValue(lines, User.class);
 
-        System.out.println(userList);
+//        System.out.println(userList);
 
 
         List<String> test = new ArrayList<>();
