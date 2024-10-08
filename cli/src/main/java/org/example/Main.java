@@ -41,7 +41,7 @@ public class Main {
 
 
 
-            System.out.println(userList);
+            System.out.println(userList.get(0).getEmail());
 
 
 //            List<String> test = new ArrayList<>();
