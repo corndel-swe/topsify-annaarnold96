@@ -1,9 +1,7 @@
 package org.example;
 
-<<<<<<< HEAD
-=======
 import java.io.File;
->>>>>>> main
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.*;
