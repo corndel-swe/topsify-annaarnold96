@@ -40,7 +40,7 @@ public class User {
     }
 
     public String getFirst_name() {
-        return first_name;
+        return first_name.replace("\'"," ");
     }
 
     public void setFirst_name(String first_name) {
@@ -48,7 +48,7 @@ public class User {
     }
 
     public String getLast_name() {
-        return last_name;
+        return last_name.replace("\'"," ");
     }
 
     public void setLast_name(String last_name) {

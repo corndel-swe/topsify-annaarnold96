@@ -31,24 +31,24 @@ public class Main {
 
         try {
             File file = Paths.get("reports", "users.json").toFile();
-            Path newFilePath = Paths.get("queries","test.sql");
+            Path newFilePath = Paths.get("db","seeds","users.sql");
 
 
             ObjectMapper mapper = new ObjectMapper();
-            System.out.println("hi");
 
             List<User> userList = mapper.readValue(file, new TypeReference<List<User>>() {});
 
+            List<String> usersToWrite = new ArrayList<>();
+
+            for (User i : userList){
+                String newString = String.format("INSERT INTO users VALUES(%s,\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\');",i.getId(),i.getUsername(),i.getFirst_name(),i.getLast_name(),i.getEmail(),i.getAvatar(),i.getPassword());
+                usersToWrite.add(newString);
+            }
+
+            System.out.println(usersToWrite);
 
 
-            System.out.println(userList);
-
-
-//            List<String> test = new ArrayList<>();
-//
-//            test.add("hello");
-
-//            Files.write(newFilePath,test);
+            Files.write(newFilePath,usersToWrite);
 
 
 }
