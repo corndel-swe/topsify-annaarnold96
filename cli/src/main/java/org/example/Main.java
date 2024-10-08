@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.*;
@@ -26,36 +27,33 @@ public class Main {
 
 
     public static void main(String[] args) {
-
-        Path filePath = Paths.get("reports", "users.json");
-        Path newFilePath = Paths.get("queries","test.sql");
-    try {
-        List<String> lines = Files.readAllLines(filePath);
-        //String stringList = String.join("",lines);
+        try {
+            File file = Paths.get("reports", "users.json").toFile();
+            Path newFilePath = Paths.get("queries","test.sql");
 
 
-        //System.out.println(stringList);
+            ObjectMapper mapper = new ObjectMapper();
+            System.out.println("hi");
 
-//        ObjectMapper mapper = new ObjectMapper();
-//        System.out.println("hi");
-//        var help = mapper.readTree(lines);
-//        System.out.println(help);
-//        User userList = mapper.readValue(lines, User.class);
-
-//        System.out.println(userList);
+            List<User> userList = mapper.readValue(file, new TypeReference<List<User>>() {});
 
 
-        List<String> test = new ArrayList<>();
 
-        test.add("hello");
+            System.out.println(userList);
 
-        Files.write(newFilePath,test);
+
+//            List<String> test = new ArrayList<>();
+//
+//            test.add("hello");
+
+//            Files.write(newFilePath,test);
 
 
 }
 
 
     catch (Exception e){
+        e.printStackTrace();
         System.out.println("this didn't work");
 
     }
