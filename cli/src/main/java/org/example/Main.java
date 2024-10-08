@@ -23,15 +23,7 @@ import kong.unirest.json.JSONObject;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-    public class User {
-        String id;
-        String username;
-        String first_name;
-        String  last_name;
-        String email;
-        String avatar;
-        String password;
-    }
+
 
     public static void main(String[] args) {
 
@@ -39,11 +31,15 @@ public class Main {
         Path newFilePath = Paths.get("queries","test.sql");
     try {
         List<String> lines = Files.readAllLines(filePath);
-        System.out.println(lines);
+        //String stringList = String.join("",lines);
+
+
+        //System.out.println(stringList);
 
         ObjectMapper mapper = new ObjectMapper();
-
-        User userList = mapper.readValue((JsonParser) lines, User.class);
+        System.out.println("hi");
+        var help =
+        User userList = mapper.readValue(lines, User.class);
 
         System.out.println(userList);
 
