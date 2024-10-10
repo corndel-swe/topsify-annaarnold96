@@ -1,0 +1,32 @@
+# Mini Brief
+
+Design a parking lot using object-oriented principles...
+
+This is a play ground for what you have learned try and practically apply.
+
+- Control flow
+- Classes
+- Methods
+- Lists, Array
+- Unit tests
+- Interfaces
+
+## Assumptions
+
+- The parking lot can hold motorcycles, cars and vans
+- The parking lot has motorcycle spots, car spots and large spots
+- A motorcycle can park in any spot
+- A car can park in a single regular spot, or a large spot
+- A van can park in a large spot, or it will take up 3 regular spots
+- All vehicles will try and park in their allotted spaces first
+
+## Specifications
+
+Here are a few methods that you should be able to run:
+
+- Tell us how many spots are remaining
+- Tell us how many total spots are in the parking lot
+- Tell us when the parking lot is full
+- Tell us when the parking lot is empty
+- Tell us when certain spots are full e.g. when all motorcycle spots are taken
+- Tell us how many spots vans are taking up
